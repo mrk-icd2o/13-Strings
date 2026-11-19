@@ -2,31 +2,26 @@
 
 You will be writing your code in `sketch.js` within the main folder - not the `example/` folder.
 
-Create a password strength checker:
+[Create a password strength checker](https://openprocessing.org/sketch/2760859/embed/?plusEmbedHash=7c579956&userID=175929&plusEmbedTitle=true&show=sketch):
 
-- Create an input box for the user to type a password. It updates live (no button needed).
+- A template has been provided.  No need to include a button - have the messages appear/disappear as the password is typed.
 
-- Display a checklist of rules. Each rule is shown in **green** if the password passes it, and **red** if it doesn't:
+- Display error messages if the following rules are not followed:
 
   - At least 8 characters long
 
-  - Contains at least one number
+  - Contains at least one uppercase letter
 
-  - Contains at least one capital letter
+  - Contains at least one lowercase letter
 
-  - Does **not** contain the word "password", in any capitalization
+  - Does **not** contain the word "password"
 
-- If all four rules pass, display "Strong password!".
+- If all four rules pass, display "Password Accepted".
 
-Hints:
-
-- A character is a number if it is between "0" and "9"
-
-- A character is a capital letter if it is between "A" and "Z"
 
 Challenge:
 
-- Add a fifth rule: contains at least one symbol (any character that is not a letter or number).
+- Add a fifth rule: contains at least one number.  Remember that `>` and `<` works with strings... but it's text, not numbers! 
 
 - `createInput("", "password")` creates an input that hides what is typed. Add a checkbox or button that shows the password.
 

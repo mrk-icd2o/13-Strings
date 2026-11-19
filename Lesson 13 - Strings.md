@@ -159,4 +159,17 @@ Be careful with numbers stored as strings. They are compared character by charac
 Number("10") < Number("9")   // false
 ```
 
-> **AP CSP:** The AP exam's questions use concatenation and substrings (part of a string). In the exam's pseudocode, indexes start at 1.
+## AP CSP Final Exam
+
+Some things you will need to know for the Final Exam:
+* Using index values to access individual characters (index starting at 1!)
+* Looping through individual characters
+* Some questions will give you a method + description (you **do not** need to memorize).  For example, a question might give:
+
+```javascript
+substring(a, b)
+// returns a substring from index a up to (but not including) index b.
+```
+
+This method would be similar to `.slice()` that we've used.
+

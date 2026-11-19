@@ -10,7 +10,7 @@ function setup() {
   createCanvas(600, 600);
   textSize(18);
 
-  wordInput = createInput("stressed");
+  wordInput = createInput("stressed","password");
   wordInput.position(20, 20);
 }
 
@@ -49,8 +49,14 @@ function draw() {
   text(`Lower case: ${word.toLowerCase()}`, 20, 300);
   text(`First 3 characters: ${word.slice(0, 3)}`, 20, 330);
   text(`Index of first "s": ${word.indexOf("s")}`, 20, 360);
-  text(`Contains "cs": ${word.includes("cs")}`, 20, 390);
-  text(`Words: ${word.split(" ").length}`, 20, 420);
+  text(`Contains "ed": ${word.includes("ed")}`, 20, 390);
+  // creates an array by splitting the string
+  text(`Words: ${word.split(" ").length}`, 20, 450);
+  text(`Replace s with a: ${word.replace("s","a")}`, 20, 480);
+  // printing the 'word' variable - was it modified?
+  text(`Word: ${word}`, 20, 420);
+
+  
 
   // ----- Comparing strings -----
   // ignore case and extra spaces when comparing
